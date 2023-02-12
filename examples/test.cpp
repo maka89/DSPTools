@@ -5,6 +5,7 @@
 #include <fstream>
 #include <iomanip> 
 using namespace std;
+using namespace dsptools;
 int main() {
 
 	unsigned int N = 10000;
