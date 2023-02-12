@@ -10,14 +10,15 @@ Dependency on `boost::circular_buffer`.
 ## Usage
 ```
 #include <dsptools.hpp>
- 
-// ...
+#include <iostream>
+using namespace std;
 
 double fs = 48000.0;
 double window = 100.0;
 MovingAverage m;
 m.setup(fs, window,0.0); //Setup. Sample rate, window size and initial value.
 
+//Assuming we have a vector<double> "x" of data.
 for(int i=0;i<x.size();i++)
   cout << x[i] << ", " << m.process(x[i]) << endl;
 
