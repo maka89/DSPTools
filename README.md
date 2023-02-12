@@ -18,7 +18,7 @@ double window = 100.0;
 MovingAverage m;
 m.setup(fs, window,0.0); //Setup. Sample rate, window size and initial value.
 
-for(unsigned int i=0;i<x.size();i++)
+for(int i=0;i<x.size();i++)
   cout << x[i] << ", " << m.process(x[i]) << endl;
 
 ```
