@@ -12,6 +12,7 @@ Dependency on `boost::circular_buffer`.
 #include <dsptools.hpp>
 #include <iostream>
 using namespace std;
+using namespace dsptools;
 
 double fs = 48000.0;
 double window = 100.0;
